@@ -1,52 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather app</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-<link rel="stylesheet" href="weat.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="weather.css">
 </head>
-<body class="mt-4">
+<body>
+  <h1 style="color: rgb(26, 39, 39);">Weather app</h1>
+    <div class="container">
+        <div class="row" style = "text-align: center;">
+         
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2"id = "search" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success bg-white" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <div class="row"  id = "weather">
 
-  <div class="d-flex justify-content-between">
-    <div>
-  <h1>  <a href="weat.html" class="text-decoration-none text-white ">Weather app</a>
-  </h1>
- </div></div>
-<div class="container">
-  
-  <div class="d-flex flex-column justify-content-center " id="search">
-    <div class="button">
-      <div class="box">W</div>
-      <div class="box">E</div>
-      <div class="box">A</div>
-      <div class="box">T</div>
-      <div class="box">H</div>
-      <div class="box">E</div>
-      <div class="box">R</div>
-    </div>
-     <form class="d-flex col-6 " role="search">
-    <input class="form-control shadow-lg  bg-body rounded flex-wrap border border-3" type="search" placeholder="Search places...." aria-label="Search">
-    <button class="btn btn-outline-success rounded-pill bg-white" type="submit">Search</button>
-  </form>
- 
-</div>
-</div>
-<div class="card mb-3">
-  <img src="https://images.pexels.com/photos/6129972/pexels-photo-6129972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="image" height="400px"
-  >
-  <div class="card-body">
-    <h5 class="card-title">Visit Nepal</h5>
-    <p class="card-text">Nepal consistently offers favorable climatic conditions, making it an exceptional and highly sought-after destination for tourists.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-    <a href="https://www.thrillophilia.com/places-to-visit-in-nepal" class="btn btn-primary">lets goooo</a>
-  </div>
-</div>
-</div>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+          <div class="card mb-3" id="card">
+            <img src="https://images.pexels.com/photos/6129972/pexels-photo-6129972.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="image" height="400px"
+            >
+            <div class="card-body">
+              <h5 class="card-title">Visit Nepal</h5>
+              <p class="card-text">Nepal consistently offers favorable climatic conditions, making it an exceptional and highly sought-after destination for tourists.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+              <a href="https://www.thrillophilia.com/places-to-visit-in-nepal" class="btn btn-primary">lets goooo</a>
+            </div>
+          </div>
+          
+        </div></div>
+    
+    <script src="weather.js"></script>
 </body>
 </html>
